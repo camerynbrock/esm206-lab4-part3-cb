@@ -27,7 +27,9 @@ ggplot(db_sub, aes(x = year,
   labs(x = "Year",
        y = "Deaths within 0-6 days (per 100,000)")
 
+# Save graph into graphs folder
 
+ggsave(here("final_graphs", "disease_graph.png"))
 
 # %in% c() means "keep anything within"
 # CHECK CHARACTER STRINGS unique(db_sub$country_name)  in console
